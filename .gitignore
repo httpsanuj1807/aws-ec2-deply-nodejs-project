@@ -1,0 +1,46 @@
+# Node.js modules
+node_modules/
+
+# Build outputs
+build/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# Testing
+coverage/
+
+# Cache
+.cache/
+*.cache
+.cache-loader/
+.tmp/
+
+# Miscellaneous
+*.lock
+.pnp.cjs
+.pnp.js
+.esli
