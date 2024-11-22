@@ -23,7 +23,7 @@ export function SignIn() {
 
     if (formValuesObject.email && formValuesObject.password) {
       console.log("Submit this form");
-      const signInResponse = await fetch("http://localhost:8080/user/signin", {
+      const signInResponse = await fetch("http://52.66.180.136:8080/user/signin", {
         method: "POST",
         body: JSON.stringify(formValuesObject),
         headers: {
@@ -48,7 +48,7 @@ export function SignIn() {
 
   const fetchUserDetails = async () => {
     let email = localStorage.getItem("email");
-    var productsResponse = await fetch(`http://localhost:8080/user/${email}`, {
+    var productsResponse = await fetch(`http://52.66.180.136:8080/user/${email}`, {
       headers: {
         Authorization: localStorage.getItem("authToken"),
       },

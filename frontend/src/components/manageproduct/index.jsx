@@ -77,7 +77,7 @@ export function ManageProduct({ type = "add" }) {
       console.log("Submit this form");
 
       // Make an api/web service call to submit the user details
-      var response = await fetch("http://localhost:8080/products", {
+      var response = await fetch("http://52.66.180.136:8080/products", {
         method: "POST",
         body: JSON.stringify({ ...formValuesObject }),
         headers: { "Content-Type": "application/json" },
@@ -111,7 +111,7 @@ export function ManageProduct({ type = "add" }) {
       console.log("Submit this form");
 
       // Make an api/web service call to submit the user details
-      var response = await fetch(`http://localhost:8080/products`, {
+      var response = await fetch(`http://52.66.180.136:8080/products`, {
         method: "PUT",
         body: JSON.stringify({ _id: selectedproduct._id, ...formValuesObject }),
         headers: { "Content-Type": "application/json" },
